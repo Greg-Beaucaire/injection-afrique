@@ -17,7 +17,7 @@
       $tableau = $etape->fetchAll();
       // Fonction pour trier l'array, https://stackoverflow.com/questions/38171550/trying-to-sort-a-multidimensional-array-by-a-sub-value-with-special-characters
       usort($tableau, function($a, $b) {
-        $collator = collator_create('en');
+        $collator = collator_create('fr');
         $arr = array($a['country_name'], $b['country_name']);
         collator_asort($collator, $arr, Collator::SORT_STRING);
         return array_pop($arr) == $a['country_name'];

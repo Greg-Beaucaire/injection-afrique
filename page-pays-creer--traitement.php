@@ -6,11 +6,10 @@ require("inc/inc.kickstart.php");
 <main class="pays-creer">
   <?php
   //Ajout d'un check pour vérifier si le form a été envoyé
-  if (isset($_POST['submitBtn'])) {
+  if(isset($_POST['submitBtn'])) {
     //TRY / CATCH
     try {
       //Requête préparée
-      $pdo = new PDO("mysql:host=" . DB_SERVER . ";dbname=" . DB_DATABASE . ";charset=utf8mb4", DB_USERNAME, DB_PASSWORD, $pdo_options);
       $requete = "INSERT INTO `country` (`country_name`, `country_flag`, `country_capital`, `country_area`)
                   VALUES (:country_name, :country_flag, :country_capital, :country_area)";
       $prepare = $pdo->prepare($requete);

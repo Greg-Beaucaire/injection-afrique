@@ -1,8 +1,8 @@
 <?php
-  const DB_SERVER    = "LOCALHOST";
-  const DB_DATABASE    = "country";
-  const DB_USERNAME   = "testDB";
-  const DB_PASSWORD    = "testDBmdp";
+  const DB_SERVER    = "";
+  const DB_DATABASE    = "";
+  const DB_USERNAME   = "";
+  const DB_PASSWORD    = "";
   const DB_DRIVER  = "mysql";
   const DB_CHARSET = "utf8mb4";
   const DB_OPTIONS = [
